@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuditApp", "AuditApp\AuditApp.csproj", "{BFF8FB3D-6E90-4596-83EF-6D9A86F9E5D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFF8FB3D-6E90-4596-83EF-6D9A86F9E5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF8FB3D-6E90-4596-83EF-6D9A86F9E5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF8FB3D-6E90-4596-83EF-6D9A86F9E5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF8FB3D-6E90-4596-83EF-6D9A86F9E5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C763309-CA1C-49D6-85F6-AD5E785296AC}
+	EndGlobalSection
+EndGlobal
