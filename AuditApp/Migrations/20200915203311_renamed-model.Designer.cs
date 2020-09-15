@@ -4,14 +4,16 @@ using AuditApp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AuditApp.Migrations
 {
     [DbContext(typeof(AuditContext))]
-    partial class AuditContextModelSnapshot : ModelSnapshot
+    [Migration("20200915203311_renamed-model")]
+    partial class renamedmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,9 +45,6 @@ namespace AuditApp.Migrations
 
                     b.Property<DateTime>("HappenedOn")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Patch")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tenant")
                         .HasColumnType("nvarchar(max)");

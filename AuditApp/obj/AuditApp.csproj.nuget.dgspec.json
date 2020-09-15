@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\AuditApp\\AuditApp\\AuditApp.csproj": {}
+    "D:\\repos\\AuditApp\\AuditApp\\AuditApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\AuditApp\\AuditApp\\AuditApp.csproj": {
+    "D:\\repos\\AuditApp\\AuditApp\\AuditApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\AuditApp\\AuditApp\\AuditApp.csproj",
+        "projectUniqueName": "D:\\repos\\AuditApp\\AuditApp\\AuditApp.csproj",
         "projectName": "AuditApp",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\AuditApp\\AuditApp\\AuditApp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\AuditApp\\AuditApp\\obj\\",
+        "projectPath": "D:\\repos\\AuditApp\\AuditApp\\AuditApp.csproj",
+        "packagesPath": "C:\\Users\\farsenault\\.nuget\\packages\\",
+        "outputPath": "D:\\repos\\AuditApp\\AuditApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\farsenault\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,7 +28,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://packages.nuget.org/v1/FeedService.svc": {}
+          "https://nuget.asicentral.com/nuget": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -42,6 +44,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "JsonDiffPatch.Net": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.8, )"

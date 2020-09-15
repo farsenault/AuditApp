@@ -2,7 +2,7 @@
 
 namespace AuditApp
 {
-    public class AuditEvent
+    public sealed class AuditEntity
     {
         public long Id { get; set; }
 
@@ -12,12 +12,16 @@ namespace AuditApp
 
         public string User { get; set; }
 
-        public string Type { get; set; }
-
-        public string Description { get; set; }
+        public string Action { get; set; }        
 
         public DateTime HappenedOn { get; set; }
 
-        public string JSON { get; set; }
+        public string EntityId { get; set; }
+
+        public string EntityType { get; set; }
+
+        public string Entity { get; set; }
+
+        public string Patch { get; set; }
     }
 }

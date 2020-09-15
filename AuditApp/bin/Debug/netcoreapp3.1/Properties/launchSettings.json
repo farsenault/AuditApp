@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/auditevents",
+      "launchUrl": "api/auditentities",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "AuditApp": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/auditevents",
+      "launchUrl": "api/auditentities",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

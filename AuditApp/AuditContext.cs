@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AuditApp
 {
@@ -14,6 +10,6 @@ namespace AuditApp
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
-        public DbSet<AuditEvent> AuditEvents { get; set; }               
+        public DbSet<AuditEntity> AuditEntities { get; set; }               
     }
 }

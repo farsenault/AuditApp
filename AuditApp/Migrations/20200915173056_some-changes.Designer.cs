@@ -4,14 +4,16 @@ using AuditApp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AuditApp.Migrations
 {
     [DbContext(typeof(AuditContext))]
-    partial class AuditContextModelSnapshot : ModelSnapshot
+    [Migration("20200915173056_some-changes")]
+    partial class somechanges
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,35 +21,35 @@ namespace AuditApp.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("AuditApp.AuditEntity", b =>
+            modelBuilder.Entity("AuditApp.AuditEvent", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Action")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Application")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Entity")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EntityId")
+                    b.Property<string>("ExternalId")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EntityType")
+                    b.Property<string>("ExternalType")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("HappenedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Patch")
+                    b.Property<string>("JSON")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tenant")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("User")
@@ -55,7 +57,7 @@ namespace AuditApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AuditEntities");
+                    b.ToTable("AuditEvents");
                 });
 #pragma warning restore 612, 618
         }
